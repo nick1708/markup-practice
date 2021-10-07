@@ -1,0 +1,49 @@
+@media (max-width: 415px) {
+	.Hero-title {
+		font-size: 96px;
+	}
+	.Mosaic-item {
+		flex-direction: column;
+	}
+	.Mosaic-image {
+		width: 100%;
+	}
+	.Mosaic-content {
+		max-width: 340px;
+		margin: 0 auto;
+		padding: 0;
+		margin-top: 134px;
+	}
+	.Mosaic-link {
+		margin-bottom: 65px;
+	}
+	.Mosaic-item.reverse {
+		flex-direction: column;
+	}
+	.Mosaic-item.reverse .Mosaic-content {
+		padding: 0;
+		max-width: 340px;
+		margin: 0 auto;
+		margin-top: 134px;
+	}
+	.Gallery-image {
+		max-width: 100%;
+	}
+	.Portfolio {
+		padding-top: 120px;
+	}
+	.Portfolio-subtitle {
+		font-size: 36px;
+		max-width: 310px;
+	}
+	.Portfolio-image {
+		max-width: 340px;
+		margin: 5px;
+	}
+	.Contact-input,
+	.Contact-textarea {
+		max-width: 304px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

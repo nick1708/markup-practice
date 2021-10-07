@@ -1,0 +1,419 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.Header {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+}
+.Header-container {
+	align-items: center;
+	display: flex;
+	height: 74px;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1140px;
+	width: 100%;
+}
+.Header-logo {
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.Header-button {
+	background-color: transparent;
+	border: none;
+	outline: none;
+}
+.Header-button i {
+	color: #fff;
+	font-size: 24px;
+}
+.Hero {
+	background-image: url("./images/banner.jpg");
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 758px;
+	position: relative;
+	width: 100%;
+}
+.Hero::before {
+	background-color: #000;
+	content: "";
+	width: 100%;
+	height: 758px;
+	display: block;
+	opacity: 0.3;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.Hero-container {
+	margin: 0 auto;
+	max-width: 1140px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.Hero-title {
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+	font-size: 146px;
+	font-weight: 700;
+	z-index: 1;
+}
+.Mosaic,
+.Mosaic-container {
+	width: 100%;
+}
+.Mosaic-item {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.Mosaic-item.reverse {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 100%;
+}
+.Mosaic-item.reverse .Mosaic-content {
+	padding-left: 0;
+	padding-right: 76px;
+}
+.Mosaic-image {
+	height: 604px;
+	object-fit: cover;
+	width: 50%;
+}
+.Mosaic-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-left: 76px;
+}
+.Mosaic-date {
+	color: #61d4e7;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 23px;
+	margin-left: 87px;
+	position: relative;
+}
+.Mosaic-date.red {
+	color: red;
+}
+.Mosaic-date.rep {
+	color: #000;
+}
+.Mosaic-date::before {
+	background-color: #61d4e7;
+	content: "";
+	height: 3px;
+	left: -87px;
+	position: absolute;
+	top: 47%;
+	width: 63px;
+}
+.Mosaic-date.red::before {
+	background-color: red;
+	content: "";
+	height: 3px;
+	left: -87px;
+	position: absolute;
+	top: 47%;
+	width: 63px;
+}
+.Mosaic-date.rep::before {
+	background-color: #000;
+	content: "";
+	height: 3px;
+	left: -87px;
+	position: absolute;
+	top: 47%;
+	width: 63px;
+}
+.Mosaic-name {
+	color: #111;
+	font-family: "Oswald", sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	line-height: 1.1;
+	margin-bottom: 40px;
+}
+.Mosaic-text {
+	color: #404040;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	margin-bottom: 40px;
+	max-width: 730px;
+	width: 100%;
+}
+.Mosaic-link {
+	color: #111;
+	border: 3px solid #61d4e7;
+	font-size: 20px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 700;
+	max-width: 166px;
+	height: 54px;
+	width: 100%;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.Mosaic-link.red {
+	border: 3px solid red;
+}
+.Mosaic-link.rep {
+	border: 3px solid #000;
+}
+.Gallery {
+	width: 100%;
+}
+.Gallery-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.Gallery-image {
+	max-width: 480px;
+	height: 353px;
+	width: 100%;
+	object-fit: cover;
+	object-position: top;
+}
+.Portfolio {
+	padding-top: 125px;
+	padding-bottom: 100px;
+}
+.Portfolio-title {
+	color: #111;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 13px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.Portfolio-subtitle {
+	color: #111;
+	font-family: "Oswald", sans-serif;
+	font-size: 60px;
+	font-weight: 700;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	line-height: 1.1;
+	margin-bottom: 80px;
+	width: 100%;
+}
+.Portfolio-albums {
+	max-width: 1140px;
+	margin: 0 auto;
+	width: 100%;
+}
+.Portfolio-image {
+	max-width: 373px;
+	height: 360px;
+	width: 100%;
+	object-fit: cover;
+	margin: 2px;
+}
+.Services {
+	padding-bottom: 84px;
+}
+.Services-container {
+	max-width: 1140px;
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.Services-image {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 326px;
+	max-width: 292px;
+	width: 100%;
+	margin: 15px;
+	position: relative;
+}
+.Services-image::before {
+	background-color: #000;
+	width: 100%;
+	height: 100%;
+	display: block;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+}
+.Services-image.olivia {
+	background-image: url("./images/Family/Olivia.jpg");
+}
+.Services-image.meredith {
+	background-image: url("./images/Family/Meredith.jpg");
+}
+.Services-image.benjamin {
+	background-image: url("./images/Family/Benjamin_Button.jpg");
+}
+.Services-image.joe {
+	background-image: url("./images/Family/bb-moska.jpg");
+}
+.Services-name {
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 20px;
+	font-weight: 400;
+	z-index: 10;
+	display: block;
+	text-align: center;
+	height: 100%;
+	line-height: 326px;
+}
+.Contact {
+	background-image: url("./images/rep-bg.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 711px;
+}
+.Contact-container {
+	max-width: 600px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: center;
+	height: 100%;
+}
+.Contact-title {
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+	font-size: 72px;
+	font-weight: 700;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.Contact-input,
+.Contact-textarea {
+	color: #fff;
+	border: 4px solid #fff;
+	border-radius: 4px;
+	display: block;
+	height: 53px;
+	width: 100%;
+	background-color: transparent;
+	margin-bottom: 15px;
+	padding: 10px 12px;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	outline: none;
+}
+.Contact-textarea {
+	height: 128px;
+}
+.Contact-button {
+	background-color: #fff;
+	border: #fff;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	max-width: 128px;
+	height: 48px;
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: "Oswald", sans-serif;
+}
+.Footer {
+	background-color: #333;
+	height: 230px;
+}
+.Footer-text {
+	color: #fff;
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-top: 60px;
+}
+.Footer-link {
+	color: #f6d427;
+	font-size: 14px;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.6;
+	font-weight: 400;
+	text-align: center;
+}
+
+@media (max-width: 1440px) {
+	.Gallery-image {
+		max-width: 380px;
+	}
+}
+@media (max-width: 1365.95px) {
+	.Gallery-image {
+		max-width: 341px;
+	}
+}
+@media (max-width: 1024px) {
+	.Header-container {
+		padding: 0 30px;
+	}
+	.Mosaic-item.reverse .Mosaic-content {
+		padding-left: 76px;
+	}
+	.Mosaic-item.reverse .Mosaic-image {
+		object-position: right;
+	}
+	.Gallery-image {
+		max-width: 256px;
+	}
+	.Portfolio-albums {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.Portfolio-image {
+		max-width: 306px;
+	}
+}
+@media (max-width: 768px) {
+	.Gallery-container {
+		flex-wrap: wrap;
+	}
+	.Gallery-image {
+		max-width: 384px;
+	}
+	.Services-container {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.Services-image {
+		max-width: 345px;
+	}
+}
